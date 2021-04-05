@@ -38,7 +38,7 @@ public class DisplayMatrix {
 	private static void printBottomLine(int size) {
 		System.out.println();
 		for (int i = 0; i < size*5; i++) {
-			System.out.print("\u203E");
+			System.out.print("\u203E");			// Unicode for an overline
 		}
 	}
 	
