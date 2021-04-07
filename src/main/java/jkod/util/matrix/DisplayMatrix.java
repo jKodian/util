@@ -18,6 +18,7 @@ public class DisplayMatrix {
 	}
 	
 	private static void printColumns(int length) {
+		System.out.print("   |");								//Padding for adding rows
 		for (int i = 0; i < length; i++) {
 			printNumber(i);
 		}
@@ -37,8 +38,9 @@ public class DisplayMatrix {
 	
 	private static void printBottomLine(int size) {
 		System.out.println();
+		System.out.print("\u203E\u203E\u203E\u203E");			// Overline for the row indexes
 		for (int i = 0; i < size*5; i++) {
-			System.out.print("\u203E");			// Unicode for an overline
+			System.out.print("\u203E");							// Unicode for an overline
 		}
 	}
 	
